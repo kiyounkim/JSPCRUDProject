@@ -20,8 +20,6 @@
     String grade = request.getParameter("grade");
     String browser = request.getParameter("browser");
     String message = request.getParameter("message");
-    //if message is null, set message to "no memo"
-    if(message == null) message = "no memo";
 
 %>
 <html>
