@@ -20,7 +20,6 @@
     String grade = request.getParameter("grade");
     String browser = request.getParameter("browser");
     String message = request.getParameter("message");
-
 %>
 <html>
 <head>
