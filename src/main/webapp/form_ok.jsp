@@ -19,9 +19,9 @@
     String grade2 = request.getParameter("grade2");
     String grade = request.getParameter("grade");
     String browser = request.getParameter("browser");
-    String memo = request.getParameter("memo");
-    if(memo== null) memo = "no memo";
-    else memo = request.getParameter("memo");
+    String message = request.getParameter("message");
+    //if message is null, set message to "no memo"
+    if(message == null) message = "no memo";
 
 %>
 <html>
@@ -48,7 +48,7 @@
     Your average grade : <%=grade2%><br>
     Your goal : <%=grade%><br>
     Your favorite browser : <%=browser%><br>
-    Memo : <%=memo%><br>
+    Memo : <%=message%><br>
 
 </body>
 </html>
