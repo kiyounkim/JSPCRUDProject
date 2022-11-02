@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="form_ok.jsp" name="student" method="post">
+    1. <label for="name"> Name: </label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <br>
+    2. <label for="snum"> Student Number: </label>
+    <input type="text" id="snum" name="snum" required>
+    <br>
+    <br>
+    3. <label for="major"> Major </label>
+    <input type="text" id="major" name="major" required>
+    <br>
+    <br>
+    4. <label for="birthday"> Birthday: </label>
+    <input type="date" id="birthday" name="birthday" required>
+    <br>
+    <p>5. What language is your favorite?</p>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">C</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">Java</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">Python</label>
+    <br>
+    <p>6. Which homework have you finished?</p>
+    <input type="checkbox" id="hw1" name="hw1" value="php">
+    <label for="hw1"> I finished php</label><br>
+    <input type="checkbox" id="hw2" name="hw2" value="Form">
+    <label for="hw2"> I finished making form</label><br>
+    <input type="checkbox" id="hw3" name="hw3" value="HTML">
+    <label for="hw3"> I finished making html</label>
+    <br>
+    <p>7. Choose a grade you want to get:</p>
+    <label for="grade">Grade</label>
+    <select id="grade" name="grade" required>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+    </select>
+    <p>8. Choose a grade you normally get:</p>
+    <label for="grade2">Grade</label>
+    <select id="grade2" name="grade2" required>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+    </select>
+    <p>9. What is your favorite browser?</p>
+    <input list="browsers" name="browser" id="browser" required>
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    <p>10. Anything you want to add?</p>
+    <textarea name="message" rows="10" cols="30"></textarea>
+    <br>
+    <input type="submit">
+    <input type="reset">
+</form>
+</body>
+</html>
